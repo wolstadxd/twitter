@@ -1,0 +1,126 @@
+.header_login {
+    display: flex;
+    flex-direction: column;
+}
+
+.header_login_wrapper {
+    display: flex;
+    gap: 41px;
+    @media (max-width: 870px) {
+        gap: 20px;
+    }
+}
+
+.login {
+    &_main_img {
+        max-width: 55%;
+        object-fit: cover;
+    }
+
+    &_dashboard {
+        display: flex;
+        align-items: center;
+        &_logo {
+            width: 50px;
+            height: 41px;
+            margin-bottom: 57px;
+            fill: none;
+        }
+    }
+
+    &_sign {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &_title {
+        font-size: 4em;
+        margin-bottom: 46px;
+        @media (max-width: 870px) {
+            font-size: 3em;
+        }
+        @media (max-width: 660px) {
+            font-size: 2em;
+        }
+    }
+
+    &_subtitle {
+        font-size: 34px;
+        margin-bottom: 31px;
+    }
+
+    &_google {
+        display: flex;
+        align-items: center;
+        height: 62px;
+        max-width: 65%;
+        border-radius: 100px;
+        border: 1px solid grey;
+        justify-content: center;
+        margin-bottom: 21px;
+        cursor: pointer;
+        img {
+            width: 31px;
+            height: 32px;
+        }
+        &:hover {
+            border: 1px solid black;
+        }
+        @media (max-width: 1000px) {
+            max-width: 90%;
+        }
+    }
+
+    &_email {
+        display: flex;
+        align-items: center;
+        height: 62px;
+        max-width: 65%;
+        border-radius: 100px;
+        border: 1px solid grey;
+        justify-content: center;
+        margin-bottom: 31px;
+        &:hover {
+            border: 1px solid black;
+        }
+        @media (max-width: 1000px) {
+            max-width: 90%;
+        }
+    }
+
+    &_privacy {
+        margin-bottom: 31px;
+        span {
+            color: #1E97E1;
+            cursor: pointer;
+            &:hover {
+                color: #116092;
+            }
+        }
+    }
+
+    &_login {
+        span {
+            color: #1E97E1;
+            cursor: pointer;
+            &:hover {
+                color: #116092;
+            }
+        }
+    }
+
+    &_footer {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        font-size: 0.8em;
+        margin-top: 15px;
+        flex-wrap: wrap;
+        a {
+            cursor: pointer;
+            &:hover {
+                color: #116092;
+            }
+        }
+    }
+}
