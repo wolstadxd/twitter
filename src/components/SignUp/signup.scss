@@ -1,10 +1,92 @@
 .header_signup {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    img {
-        width: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  max-width: 750px;
+  width: 100%;
+  margin: auto;
+  img {
+    width: 40px;
+    height: 33px;
+    margin-top: 43px;
+  }
+}
+
+.form_title {
+  margin-bottom: 40px;
+  font-size: 30px;
+}
+
+.header_signup > form {
+  width: 100%;
+  border: 1px solid grey;
+  padding: 40px;
+  border-radius: 15px;
+  background: white;
+}
+
+.form {
+  & > button {
+    width: 100%;
+    background: #1da1f2;
+    color: white;
+    border: none;
+    border-radius: 100px;
+    padding: 18px;
+    font-size: 18px;
+    transition: all ease 0.4s;
+    margin-top: 38px;
+    &:hover {
+      background: #0e81c8;
     }
+  }
+
+  & > a {
+    color: #1da1f2;
+  }
+
+  & > h2 {
+    margin: 17px 0 32px 0;
+    font-size: 18px;
+  }
+
+  & > p {
+    color: #666666;
+  }
+}
+
+.field {
+  margin-bottom: 20px;
+  & > input {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid grey;
+    border-radius: 10px;
+  }
+}
+
+.dates_block {
+  display: flex;
+  gap: 20px;
+  margin-top: 32px;
+  @media (max-width: 650px) {
+    gap: 10px;
+  }
+}
+
+.dates_form {
+  max-width: 25%;
+  width: 100%;
+  padding: 20px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  @media (max-width: 650px) {
+    padding: 15pxэ 10px;
+  }
+}
+
+.form_moths {
+  max-width: 50%;
 }
