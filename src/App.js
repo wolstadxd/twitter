@@ -5,8 +5,8 @@ import Login from './components/Login';
 function App() {
   return (
     <div className="wrapper">
+        <SignUp/>
         <Login/>
-        {/* <SignUp/> */}
     </div>
   );
 }
