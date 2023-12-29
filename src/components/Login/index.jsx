@@ -1,5 +1,6 @@
 import React from "react";
 import "./login.scss";
+import {Link} from 'react-router-dom'
 
 const Login = () => {
   return (
@@ -24,7 +25,9 @@ const Login = () => {
                 <img src="images/google_logo.png" alt="google_logo" />
                 Sign up with Google
               </div>
-              <div className="login_email">Sign up with email</div>
+              <Link to='/signup'>
+                <div className="login_email">Sign up with email</div>
+              </Link>
               <div className="login_privacy">
                 By singing up you agree to the{" "}
                 <a

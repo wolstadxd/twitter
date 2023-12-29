@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./signup.scss";
+import {Link, useNavigate} from 'react-router-dom'
 
 const SignUp = () => {
   const [username, setUsername] = useState();
@@ -9,6 +10,8 @@ const SignUp = () => {
   const [selectedYear, setSelectedYear] = useState("2023");
   const [selectedDay, setSelectedDay] = useState("31");
   const monthDays = 31;
+
+  const navigate = useNavigate()
 
   const months = [
     { label: "January", value: "01" },
@@ -53,6 +56,7 @@ const SignUp = () => {
     setUsername("");
     setPhone("");
     setEmail("");
+    navigate("/home");
   };
 
   return (
@@ -61,6 +65,9 @@ const SignUp = () => {
         <div className="header_signup">
           <form onSubmit={submitForm}>
             <h1 className="form_title">Create an account</h1>
+            <Link to='/'>
+            <div className="back_to_login">Back to login</div>
+          </Link>
             <div className="divider"></div>
             <div className="form">
               <div className="field">
@@ -144,8 +151,7 @@ const SignUp = () => {
                 </select>
                 {/* <p>{selectedDay}</p> */}
               </div>
-
-              <button>Next</button>
+                <button>Next</button>
             </div>
           </form>
         </div>
